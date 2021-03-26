@@ -1,3 +1,33 @@
 /* .App {
   text-align: center;
 } */
+
+/* Register.js */
+.register {
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: white;
+}
+.submit {
+  background-color: #0900bd;
+  color: white;
+  padding: 15px 18px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.register-to-login{
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+span{
+  color: darkred;
+}
