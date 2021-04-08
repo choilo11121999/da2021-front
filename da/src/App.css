@@ -1,7 +1,12 @@
 /* .App {
   text-align: center;
 } */
-
+.login {
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: white;
+}
 /* Register.js */
 .register {
   width: 500px;
