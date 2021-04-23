@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import App from '../../App.css';
 function Register(props) {
     return (
@@ -28,14 +29,14 @@ function Register(props) {
                             <label className="form-check-label">
                                 <input className="form-check-input" type="checkbox" id="gridCheck" />
                                 <p >Tôi đã đọc và đồng ý các điều kiện 
-                                    <a href="#"> Thỏa thuận sử dụng</a>.</p>
+                                    <Link to="/thoathuan"> Thỏa thuận sử dụng</Link>.</p>
                             </label>
                         </div>
-                        <button type="submit" className="submit">Đăng ký</button>
+                        <button type="submit" className="submit btn btn-danger btn-block btn-lg">Đăng ký</button>
                     </div>
                 </form>
                 <div className="register-to-login">
-                    <p>Bạn đã có tài khoản rồi? <a href="#">Đăng nhập</a>.</p>
+                    <p>Bạn đã có tài khoản rồi? <Link to="/user/login">Đăng nhập</Link>.</p>
                 </div>
             </div>
         </>
