@@ -1,7 +1,12 @@
 /* .App {
   text-align: center;
 } */
-
+.login {
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: white;
+}
 /* Register.js */
 .register {
   width: 500px;
@@ -9,7 +14,7 @@
   margin: 0 auto;
   background-color: white;
 }
-.submit {
+/* .submit {
   background-color: #0900bd;
   color: white;
   padding: 15px 18px;
@@ -20,14 +25,18 @@
   opacity: 0.9;
   text-transform: uppercase;
   font-size: 18px;
-}
+} */
 .register-to-login{
   width: 500px;
   padding: 20px;
   margin: 0 auto;
   background-color: white;
-  text-align: center;
+  text-align: left;
 }
 span{
   color: darkred;
+}
+
+.active-link {
+  color: #999 !important;
 }
