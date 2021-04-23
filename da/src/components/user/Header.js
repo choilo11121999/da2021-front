@@ -1,107 +1,108 @@
+import { NavLink } from "react-router-dom";
 import "./../../css/Header.css";
 import imgLogo from "./../../img/cgvlogo.png";
 const Header = () => {
   return (
-    <>
+    <div className="header">
       <div className="header-language-background p-1 clearfix">
-        <div class="navbar navbar-expand-sm navbar-light bg-light float-right p-0">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link p-0" href="#">
-                Tin moi & uu dai
-              </a>
+        <div className="navbar navbar-expand-sm navbar-light bg-light float-right p-0">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <NavLink activeClassName="active-link" className="nav-Navlink p-0" to="/news">
+                Tin mới & ưu đãi
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="#">
-                Ve cua toi
-              </a>
+            <li className="nav-item">
+              <NavLink activeClassName="active-link" className="nav-Navlink p-0" to="/my_ticket">
+                Vé của tôi
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="#">
-                Dang nhap/ Dang ky
-              </a>
+            <li className="nav-item">
+              <NavLink activeClassName="active-link" className="nav-Navlink p-0" to="/user/login">
+                Đăng nhập / Đăng ký
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="#">
+            <li className="nav-item">
+              <NavLink activeClassName="active-link" className="nav-Navlink p-0" to="/vn">
                 VN/EN
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
       </div>
       <div className="header-page d-flex align-items-center">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">
+        <nav className="navbar navbar-expand-lg navbar-light">
+          <NavLink className="navbar-brand" to="/">
             <img src={imgLogo} width="150" height="70" alt="logo" />
-          </a>
-          <div class="navbar mt-4">
-            <ul class="navbar-nav">
-              <li class="nav-item position-relative show-menu">
-                <a class="nav-link text-dark font-weight-bold" href="#">
+          </NavLink>
+          <div className="navbar mt-4">
+            <ul className="navbar-nav">
+              <li className="nav-item position-relative show-menu">
+                <NavLink activeClassName="active-link" className="nav-Navlink text-dark font-weight-bold" to="/movie">
                   PHIM
-                </a>
+                </NavLink>
                 <div className="menu">
                   <div className="list-menu d-flex flex-column">
-                    <a href="#" class="">
-                      Phim dang chieu
-                    </a>
-                    <a href="#" class="">
-                      Phim sap chieu
-                    </a>
+                    <NavLink activeClassName="active-link" to="/movie/movie_playing" className="">
+                      Phim Đang Chiếu
+                    </NavLink>
+                    <NavLink activeClassName="active-link" to="/movie/movie_upcoming" className="">
+                      Phim Sắp Chiếu
+                    </NavLink>
                   </div>
                 </div>
               </li>
-              <li class="nav-item position-relative show-menu">
-                <a class="nav-link text-dark font-weight-bold" href="#">
+              <li className="nav-item position-relative show-menu">
+                <NavLink activeClassName="active-link" className="nav-Navlink text-dark font-weight-bold" to="/theater">
                   RẠP CGV
-                </a>
+                </NavLink>
                 <div className="menu">
                   <div className="list-menu d-flex flex-column">
-                    <a href="#" class="">
-                      Tat ca cac rap
-                    </a>
-                    <a href="#" class="">
-                      Rap dac biet
-                    </a>
-                    <a href="#" class="">
-                      Rap sap mo
-                    </a>
+                    <NavLink activeClassName="active-link" to="/theater/theater_all" className="">
+                      Tất Cả Các Rạp
+                    </NavLink>
+                    <NavLink activeClassName="active-link" to="/theater/theater_special" className="">
+                      Rạp Đặc Biệt
+                    </NavLink>
+                    <NavLink activeClassName="active-link" to="/theater/theater_upcoming" className="">
+                      Rạp Sắp Mở
+                    </NavLink>
                   </div>
                 </div>
               </li>
-              <li class="nav-item position-relative show-menu">
-                <a class="nav-link text-dark font-weight-bold" href="#">
+              <li className="nav-item position-relative show-menu">
+                <NavLink activeClassName="active-link" className="nav-Navlink text-dark font-weight-bold" to="/member">
                   THÀNH VIÊN
-                </a>
+                </NavLink>
                 <div className="menu">
                   <div className="list-menu d-flex flex-column">
-                    <a href="#" class="">
-                      Tai khoan CGV
-                    </a>
-                    <a href="#" class="">
-                      Quyen loi
-                    </a>
+                    <NavLink activeClassName="active-link" to="/member/account" className="">
+                      Tài Khoản CGV
+                    </NavLink>
+                    <NavLink activeClassName="active-link" to="/member/right" className="">
+                      Quyền Lợi
+                    </NavLink>
                   </div>
                 </div>
               </li>
-              <li class="nav-item position-relative show-menu">
-                <a class="nav-link text-dark font-weight-bold" href="#">
+              <li className="nav-item position-relative show-menu">
+                <NavLink activeClassName="active-link" className="nav-Navlink text-dark font-weight-bold" to="/cultureplex">
                   CULTUREPLEX
-                </a>
+                </NavLink>
                 <div className="menu">
                   <div className="list-menu d-flex flex-column">
-                    <a href="#" class="">
-                      Quay Online
-                    </a>
-                    <a href="#" class="">
-                      Su kien & ve nhom
-                    </a>
-                    <a href="#" class="">
-                      CGV restaurant
-                    </a>
-                    <a href="#" class="">
-                      The qua tang
-                    </a>
+                    <NavLink activeClassName="active-link" to="/quay_online" className="">
+                      Quầy Online
+                    </NavLink>
+                    <NavLink activeClassName="active-link" to="/event" className="">
+                      Sự Kiện & Vé Nhóm
+                    </NavLink>
+                    <NavLink activeClassName="active-link" to="cgv_restaurant" className="">
+                      Nhà Hàng CGV
+                    </NavLink>
+                    <NavLink activeClassName="active-link" to="/gif" className="">
+                      Thẻ Quà Tặng
+                    </NavLink>
                   </div>
                 </div>
               </li>
@@ -109,7 +110,7 @@ const Header = () => {
           </div>
         </nav>
       </div>
-    </>
+    </div>
   );
 };
 
