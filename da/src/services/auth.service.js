@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from 'axios';
 
-const API_URL = "https:/localhost:8080/api/auth";
+const API_URL = "http://45.77.241.194:8080/api/auth";
 
 const register = (username, email, password) => {
   return axios.post(API_URL + "signup", {
@@ -13,7 +13,7 @@ const register = (username, email, password) => {
 
 const login = (username, password) => {
   return axios
-    .post(API_URL + "signin", {
+    .post(API_URL + "login", {
       username,
       password,
      })
